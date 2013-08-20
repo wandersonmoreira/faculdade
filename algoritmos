@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//funcao soma
+float Soma (float n1, float n2){
+      float calc=0;
+      calc=n1+n2;
+      printf ("O resultado da soma: %.2f",calc);
+      printf ("\n");
+}
+//funcao subtração
+float Sub (float n1, float n2){
+      float calc=0;
+      calc=n1-n2;
+      printf ("O resultado da subtracao: %.2f",calc);
+      printf ("\n");
+}
+//funcao multiplicacao
+float Multiplicacao (float n1, float n2){
+      float calc=0;
+      calc=n1*n2;
+      printf ("O resultado da multiplicacao: %.2f",calc);
+      printf ("\n");
+}
+//funcao divisao
+float Div (float n1, float n2){
+      float calc=0;
+      calc=n1/n2;
+      printf ("O resultado da divisao: %.2f",calc);
+      printf ("\n");
+}
+//funcao main
+int main(){
+    int opcao;
+    float num1=0,num2=0;
+    //abaixo menu
+    printf ("\nESCOLHA UMA DAS OPCOES ABAIXO\n");
+    printf ("Somar, tecle       - 1\n");
+    printf ("Subtrair, tecle    - 2\n");
+    printf ("Multiplicar, tecle - 3\n");
+    printf ("Dividir, tecle     - 4\n");
+    printf ("Para sair, tecle   - 5\n");
+    printf ("\n");
+    printf ("Opcao: ");
+    scanf ("%d", &opcao);
+    //fim do menu acima
+    //estrutura de selecao
+    if (opcao ==1){
+    printf ("Soma\n");
+    printf ("\n");
+    printf ("Digite dois numeros: ");
+    scanf ("%f%f", &num1, &num2);
+    printf ("\n");
+    Soma(num1,num2);
+    }
+    else if (opcao ==2){
+    printf ("Subtracao\n");
+    printf ("\n");
+    printf ("Digite dois numeros: ");
+    scanf ("%f%f", &num1, &num2);
+    printf ("\n");
+    Sub(num1,num2);
+    }
+    else if (opcao ==3){
+    printf ("Multiplicacao\n");
+    printf ("\n");
+    printf ("Digite dois numeros: ");
+    scanf ("%f%f", &num1, &num2);
+    printf ("\n");
+    Multiplicacao(num1,num2);
+    }
+    else if (opcao ==4){
+    printf ("Divisao\n");
+    printf ("\n");
+    printf ("Digite dois numeros: ");
+    scanf ("%f%f", &num1, &num2);
+    printf ("\n");
+    Div(num1,num2);
+    }
+    else{
+         printf ("Escolha invalida, tente novamente...\n");
+    }
+    
+    
+system ("pause");
+return 0;
+}
